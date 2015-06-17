@@ -1,0 +1,9 @@
+{
+  "name": "firenze-sandbox",
+  "version": "0.1.0",
+  "description": "just playin with firenze",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
