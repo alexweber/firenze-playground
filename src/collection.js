@@ -9,7 +9,5 @@ export default class Posts extends Collection {
 
 	table: 'posts'
 
-	modelClass: () => {
-		return Post;
-	}
+	modelClass: () => ( Post )
 }

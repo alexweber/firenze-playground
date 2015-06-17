@@ -10,9 +10,7 @@ export default class Post extends Model {
 
 	displayField: 'title'
 
-	collectionClass: () => {
-		return Posts;
-	}
+	collectionClass: () => ( Posts )
 
 	schema: {
 		id: {
