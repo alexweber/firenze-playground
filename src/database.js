@@ -2,7 +2,7 @@ import Database from 'firenze/lib/Database';
 import MySQL from 'firenze-adapter-mysql';
 
 let db = new Database({
-	adapter: MysqlAdapter,
+	adapter: MySQL,
   // host: '127.0.0.1',
   host: 'localhost',
   database: 'demo_firenze',
