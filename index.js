@@ -9,14 +9,12 @@ var Posts = require('./lib/collection')(db);
 // Create table from model.
 db.getAdapter().createTable(Post);
 
-// Release db connection.
-db.close();
-
 // saving.
 var post = new Post({
   title: 'Hello World',
   body: 'blah...'
 });
+
 post.save().then(function (model) {
   console.log('Saved with ID: ' + model.get('id'));
 }).catch(function (err) {
@@ -41,3 +39,6 @@ posts.find('first', {
 
 	console.log(postObject);
 });
+
+// Release db connection.
+db.close();
