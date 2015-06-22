@@ -6,8 +6,10 @@ var db = new firenze.Database(config);
 var Post = require('./lib/model')(db);
 var Posts = require('./lib/collection')(db);
 
+var dummyPost = new Post();
+
 // Create table from model.
-db.getAdapter().createTable(Post);
+db.getAdapter().createTable(dummyPost);
 
 // saving.
 var post = new Post({
